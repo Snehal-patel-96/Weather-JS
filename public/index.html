@@ -4,11 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./output.css" />
     <script defer src="./script.js"></script>
     <title>Weather App</title>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Index page</h1>
+  <body class="font-poppins">
+    <section class="container border-2 border-red-200 mx-auto text-center py-8">
+      <h1 class="text-4xl">Weather App</h1>
+      <div class="border-2 border-blue-400 p-8">
+        <div
+          class="flex justify-around items-center border-2 border-black py-4"
+        >
+          <p class="text-xl uppercase font-extralight">City Name</p>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="enter city name..."
+            class="border-4 border-blue-400 rounded-full p-2 text-center outline-none focus:placeholder-blue-500 focus:border-blue-500 transition-all"
+          />
+        </div>
+        <div
+          class="flex justify-around items-center border-2 border-grey-400 py-4"
+        >
+          <div class="flex flex-col gap-3">
+            <p>city name</p>
+            <p>date time</p>
+            <p>10 C</p>
+            <p>feels like -9</p>
+          </div>
+          <div>
+            <img
+              src="./imgs/jeremy-thomas-jh2KTqHLMjE-unsplash.jpg"
+              alt="weather icon"
+              class="w-48 h-48 rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
